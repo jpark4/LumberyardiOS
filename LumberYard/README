@@ -1,0 +1,40 @@
+//===================//
+//Created by Jay Park//
+//===================//
+
+To implement LumberYard:
+
+Add to you PCH file:
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "LumberYard.h" <-----------------THIS SPECIFICALLY
+#endif
+
+//Set logging visibility level
+#ifdef DEBUG
+static const int ddLogLevel = LOG_LEVEL_VERBOSE; //or whatever level you want
+#else
+static const int ddLogLevel = LOG_LEVEL_INFO; //or whatever level you want
+#endif
+
+Now, replace all your NSLogs with a type of DDLog
+All logging will try to print to the console, the logging visibility level defined above will determine if it shows up or not. The types are:
+DDLogVerbose
+DDLogDebug
+DDLogInfo
+DDLogWarn
+DDLogError
+
+Levels of Logging
+LOG_LEVEL_ERROR, then you will only see DDLogError statements.
+LOG_LEVEL_WARN, then you will only see DDLogError and DDLogWarn statements.
+LOG_LEVEL_INFO, you'll see Error, Warn and Info statements.
+LOG_LEVEL_DEBUG, you'll see Error, Warn, Info and Debug statements.
+LOG_LEVEL_VERBOSE, you'll see all DDLog statements.
+LOG_LEVEL_OFF, you won't see any DDLog statements.
+
+
+TODO: 
+Develop custom attributes that can be added to the logger as meta data.
+default attributes: Appname, AppID, DeviceName, some sort of unique device identifier thats not UUID

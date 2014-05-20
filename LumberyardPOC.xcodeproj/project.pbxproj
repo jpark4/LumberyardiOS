@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC78EC35183A9DE800871DFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78EC34183A9DE800871DFC /* Foundation.framework */; };
+		FC78EC37183A9DE800871DFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78EC36183A9DE800871DFC /* CoreGraphics.framework */; };
+		FC78EC39183A9DE800871DFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78EC38183A9DE800871DFC /* UIKit.framework */; };
+		FC78EC3F183A9DE800871DFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC78EC3D183A9DE800871DFC /* InfoPlist.strings */; };
+		FC78EC41183A9DE800871DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78EC40183A9DE800871DFC /* main.m */; };
+		FC78EC45183A9DE800871DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78EC44183A9DE800871DFC /* AppDelegate.m */; };
+		FC78EC48183A9DE800871DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC78EC46183A9DE800871DFC /* Main.storyboard */; };
+		FC78EC4B183A9DE800871DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78EC4A183A9DE800871DFC /* ViewController.m */; };
+		FC78EC4D183A9DE800871DFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC78EC4C183A9DE800871DFC /* Images.xcassets */; };
+		FC78EC54183A9DE800871DFC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78EC53183A9DE800871DFC /* XCTest.framework */; };
+		FC78EC55183A9DE800871DFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78EC34183A9DE800871DFC /* Foundation.framework */; };
+		FC78EC56183A9DE800871DFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78EC38183A9DE800871DFC /* UIKit.framework */; };
+		FC78EC5E183A9DE800871DFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC78EC5C183A9DE800871DFC /* InfoPlist.strings */; };
+		FC78EC60183A9DE800871DFC /* LumberyardPOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78EC5F183A9DE800871DFC /* LumberyardPOCTests.m */; };
+		FCF6AF30183D4919005A6A26 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6AF1E183D4919005A6A26 /* DDAbstractDatabaseLogger.m */; };
+		FCF6AF31183D4919005A6A26 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6AF20183D4919005A6A26 /* DDASLLogger.m */; };
+		FCF6AF32183D4919005A6A26 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6AF22183D4919005A6A26 /* DDFileLogger.m */; };
+		FCF6AF33183D4919005A6A26 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6AF24183D4919005A6A26 /* DDLog.m */; };
+		FCF6AF34183D4919005A6A26 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6AF26183D4919005A6A26 /* DDTTYLogger.m */; };
+		FCF6AF35183D4919005A6A26 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6AF29183D4919005A6A26 /* ContextFilterLogFormatter.m */; };
+		FCF6AF36183D4919005A6A26 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6AF2B183D4919005A6A26 /* DispatchQueueLogFormatter.m */; };
+		FCF6AF38183D4919005A6A26 /* LumberYard.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6AF2E183D4919005A6A26 /* LumberYard.m */; };
+		FCF6AF39183D4919005A6A26 /* README in Resources */ = {isa = PBXBuildFile; fileRef = FCF6AF2F183D4919005A6A26 /* README */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC78EC57183A9DE800871DFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC78EC29183A9DE800871DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC78EC30183A9DE800871DFC;
+			remoteInfo = LumberyardPOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC78EC31183A9DE800871DFC /* LumberyardPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LumberyardPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC78EC34183A9DE800871DFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FC78EC36183A9DE800871DFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FC78EC38183A9DE800871DFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FC78EC3C183A9DE800871DFC /* LumberyardPOC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LumberyardPOC-Info.plist"; sourceTree = "<group>"; };
+		FC78EC3E183A9DE800871DFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC78EC40183A9DE800871DFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC78EC42183A9DE800871DFC /* LumberyardPOC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LumberyardPOC-Prefix.pch"; sourceTree = "<group>"; };
+		FC78EC43183A9DE800871DFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC78EC44183A9DE800871DFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC78EC47183A9DE800871DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC78EC49183A9DE800871DFC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC78EC4A183A9DE800871DFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC78EC4C183A9DE800871DFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC78EC52183A9DE800871DFC /* LumberyardPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LumberyardPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC78EC53183A9DE800871DFC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FC78EC5B183A9DE800871DFC /* LumberyardPOCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LumberyardPOCTests-Info.plist"; sourceTree = "<group>"; };
+		FC78EC5D183A9DE800871DFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC78EC5F183A9DE800871DFC /* LumberyardPOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LumberyardPOCTests.m; sourceTree = "<group>"; };
+		FCF6AF1D183D4919005A6A26 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		FCF6AF1E183D4919005A6A26 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		FCF6AF1F183D4919005A6A26 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		FCF6AF20183D4919005A6A26 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		FCF6AF21183D4919005A6A26 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		FCF6AF22183D4919005A6A26 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		FCF6AF23183D4919005A6A26 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		FCF6AF24183D4919005A6A26 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		FCF6AF25183D4919005A6A26 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		FCF6AF26183D4919005A6A26 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		FCF6AF28183D4919005A6A26 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		FCF6AF29183D4919005A6A26 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		FCF6AF2A183D4919005A6A26 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		FCF6AF2B183D4919005A6A26 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		FCF6AF2D183D4919005A6A26 /* LumberYard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberYard.h; sourceTree = "<group>"; };
+		FCF6AF2E183D4919005A6A26 /* LumberYard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberYard.m; sourceTree = "<group>"; };
+		FCF6AF2F183D4919005A6A26 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC78EC2E183A9DE800871DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC78EC37183A9DE800871DFC /* CoreGraphics.framework in Frameworks */,
+				FC78EC39183A9DE800871DFC /* UIKit.framework in Frameworks */,
+				FC78EC35183A9DE800871DFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC78EC4F183A9DE800871DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC78EC54183A9DE800871DFC /* XCTest.framework in Frameworks */,
+				FC78EC56183A9DE800871DFC /* UIKit.framework in Frameworks */,
+				FC78EC55183A9DE800871DFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC78EC28183A9DE800871DFC = {
+			isa = PBXGroup;
+			children = (
+				FC78EC3A183A9DE800871DFC /* LumberyardPOC */,
+				FC78EC59183A9DE800871DFC /* LumberyardPOCTests */,
+				FC78EC33183A9DE800871DFC /* Frameworks */,
+				FC78EC32183A9DE800871DFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC78EC32183A9DE800871DFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC78EC31183A9DE800871DFC /* LumberyardPOC.app */,
+				FC78EC52183A9DE800871DFC /* LumberyardPOCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC78EC33183A9DE800871DFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCF6AF1C183D4919005A6A26 /* LumberYard */,
+				FC78EC34183A9DE800871DFC /* Foundation.framework */,
+				FC78EC36183A9DE800871DFC /* CoreGraphics.framework */,
+				FC78EC38183A9DE800871DFC /* UIKit.framework */,
+				FC78EC53183A9DE800871DFC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC78EC3A183A9DE800871DFC /* LumberyardPOC */ = {
+			isa = PBXGroup;
+			children = (
+				FC78EC43183A9DE800871DFC /* AppDelegate.h */,
+				FC78EC44183A9DE800871DFC /* AppDelegate.m */,
+				FC78EC46183A9DE800871DFC /* Main.storyboard */,
+				FC78EC49183A9DE800871DFC /* ViewController.h */,
+				FC78EC4A183A9DE800871DFC /* ViewController.m */,
+				FC78EC4C183A9DE800871DFC /* Images.xcassets */,
+				FC78EC3B183A9DE800871DFC /* Supporting Files */,
+			);
+			path = LumberyardPOC;
+			sourceTree = "<group>";
+		};
+		FC78EC3B183A9DE800871DFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC78EC3C183A9DE800871DFC /* LumberyardPOC-Info.plist */,
+				FC78EC3D183A9DE800871DFC /* InfoPlist.strings */,
+				FC78EC40183A9DE800871DFC /* main.m */,
+				FC78EC42183A9DE800871DFC /* LumberyardPOC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC78EC59183A9DE800871DFC /* LumberyardPOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC78EC5F183A9DE800871DFC /* LumberyardPOCTests.m */,
+				FC78EC5A183A9DE800871DFC /* Supporting Files */,
+			);
+			path = LumberyardPOCTests;
+			sourceTree = "<group>";
+		};
+		FC78EC5A183A9DE800871DFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC78EC5B183A9DE800871DFC /* LumberyardPOCTests-Info.plist */,
+				FC78EC5C183A9DE800871DFC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCF6AF1C183D4919005A6A26 /* LumberYard */ = {
+			isa = PBXGroup;
+			children = (
+				FCF6AF1D183D4919005A6A26 /* DDAbstractDatabaseLogger.h */,
+				FCF6AF1E183D4919005A6A26 /* DDAbstractDatabaseLogger.m */,
+				FCF6AF1F183D4919005A6A26 /* DDASLLogger.h */,
+				FCF6AF20183D4919005A6A26 /* DDASLLogger.m */,
+				FCF6AF21183D4919005A6A26 /* DDFileLogger.h */,
+				FCF6AF22183D4919005A6A26 /* DDFileLogger.m */,
+				FCF6AF23183D4919005A6A26 /* DDLog.h */,
+				FCF6AF24183D4919005A6A26 /* DDLog.m */,
+				FCF6AF25183D4919005A6A26 /* DDTTYLogger.h */,
+				FCF6AF26183D4919005A6A26 /* DDTTYLogger.m */,
+				FCF6AF27183D4919005A6A26 /* Extensions */,
+				FCF6AF2D183D4919005A6A26 /* LumberYard.h */,
+				FCF6AF2E183D4919005A6A26 /* LumberYard.m */,
+				FCF6AF2F183D4919005A6A26 /* README */,
+			);
+			path = LumberYard;
+			sourceTree = "<group>";
+		};
+		FCF6AF27183D4919005A6A26 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FCF6AF28183D4919005A6A26 /* ContextFilterLogFormatter.h */,
+				FCF6AF29183D4919005A6A26 /* ContextFilterLogFormatter.m */,
+				FCF6AF2A183D4919005A6A26 /* DispatchQueueLogFormatter.h */,
+				FCF6AF2B183D4919005A6A26 /* DispatchQueueLogFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC78EC30183A9DE800871DFC /* LumberyardPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC78EC63183A9DE800871DFC /* Build configuration list for PBXNativeTarget "LumberyardPOC" */;
+			buildPhases = (
+				FC78EC2D183A9DE800871DFC /* Sources */,
+				FC78EC2E183A9DE800871DFC /* Frameworks */,
+				FC78EC2F183A9DE800871DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LumberyardPOC;
+			productName = LumberyardPOC;
+			productReference = FC78EC31183A9DE800871DFC /* LumberyardPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC78EC51183A9DE800871DFC /* LumberyardPOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC78EC66183A9DE800871DFC /* Build configuration list for PBXNativeTarget "LumberyardPOCTests" */;
+			buildPhases = (
+				FC78EC4E183A9DE800871DFC /* Sources */,
+				FC78EC4F183A9DE800871DFC /* Frameworks */,
+				FC78EC50183A9DE800871DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC78EC58183A9DE800871DFC /* PBXTargetDependency */,
+			);
+			name = LumberyardPOCTests;
+			productName = LumberyardPOCTests;
+			productReference = FC78EC52183A9DE800871DFC /* LumberyardPOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC78EC29183A9DE800871DFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = SapientNitro;
+				TargetAttributes = {
+					FC78EC51183A9DE800871DFC = {
+						TestTargetID = FC78EC30183A9DE800871DFC;
+					};
+				};
+			};
+			buildConfigurationList = FC78EC2C183A9DE800871DFC /* Build configuration list for PBXProject "LumberyardPOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC78EC28183A9DE800871DFC;
+			productRefGroup = FC78EC32183A9DE800871DFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC78EC30183A9DE800871DFC /* LumberyardPOC */,
+				FC78EC51183A9DE800871DFC /* LumberyardPOCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC78EC2F183A9DE800871DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCF6AF39183D4919005A6A26 /* README in Resources */,
+				FC78EC4D183A9DE800871DFC /* Images.xcassets in Resources */,
+				FC78EC3F183A9DE800871DFC /* InfoPlist.strings in Resources */,
+				FC78EC48183A9DE800871DFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC78EC50183A9DE800871DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC78EC5E183A9DE800871DFC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC78EC2D183A9DE800871DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCF6AF33183D4919005A6A26 /* DDLog.m in Sources */,
+				FCF6AF34183D4919005A6A26 /* DDTTYLogger.m in Sources */,
+				FC78EC4B183A9DE800871DFC /* ViewController.m in Sources */,
+				FCF6AF32183D4919005A6A26 /* DDFileLogger.m in Sources */,
+				FC78EC45183A9DE800871DFC /* AppDelegate.m in Sources */,
+				FCF6AF36183D4919005A6A26 /* DispatchQueueLogFormatter.m in Sources */,
+				FCF6AF30183D4919005A6A26 /* DDAbstractDatabaseLogger.m in Sources */,
+				FC78EC41183A9DE800871DFC /* main.m in Sources */,
+				FCF6AF31183D4919005A6A26 /* DDASLLogger.m in Sources */,
+				FCF6AF38183D4919005A6A26 /* LumberYard.m in Sources */,
+				FCF6AF35183D4919005A6A26 /* ContextFilterLogFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC78EC4E183A9DE800871DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC78EC60183A9DE800871DFC /* LumberyardPOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC78EC58183A9DE800871DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC78EC30183A9DE800871DFC /* LumberyardPOC */;
+			targetProxy = FC78EC57183A9DE800871DFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC78EC3D183A9DE800871DFC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC78EC3E183A9DE800871DFC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FC78EC46183A9DE800871DFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC78EC47183A9DE800871DFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC78EC5C183A9DE800871DFC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC78EC5D183A9DE800871DFC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC78EC61183A9DE800871DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC78EC62183A9DE800871DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC78EC64183A9DE800871DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LumberyardPOC/LumberyardPOC-Prefix.pch";
+				INFOPLIST_FILE = "LumberyardPOC/LumberyardPOC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jpark4/Development/LumberyardPOC,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/LumberYard-cnnoweatfotpyohftiwlpicbgoaq/Build/Products/Debug-iphoneos",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FC78EC65183A9DE800871DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LumberyardPOC/LumberyardPOC-Prefix.pch";
+				INFOPLIST_FILE = "LumberyardPOC/LumberyardPOC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jpark4/Development/LumberyardPOC,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/LumberYard-cnnoweatfotpyohftiwlpicbgoaq/Build/Products/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FC78EC67183A9DE800871DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LumberyardPOC.app/LumberyardPOC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LumberyardPOC/LumberyardPOC-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LumberyardPOCTests/LumberyardPOCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FC78EC68183A9DE800871DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LumberyardPOC.app/LumberyardPOC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LumberyardPOC/LumberyardPOC-Prefix.pch";
+				INFOPLIST_FILE = "LumberyardPOCTests/LumberyardPOCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC78EC2C183A9DE800871DFC /* Build configuration list for PBXProject "LumberyardPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC78EC61183A9DE800871DFC /* Debug */,
+				FC78EC62183A9DE800871DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC78EC63183A9DE800871DFC /* Build configuration list for PBXNativeTarget "LumberyardPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC78EC64183A9DE800871DFC /* Debug */,
+				FC78EC65183A9DE800871DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC78EC66183A9DE800871DFC /* Build configuration list for PBXNativeTarget "LumberyardPOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC78EC67183A9DE800871DFC /* Debug */,
+				FC78EC68183A9DE800871DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC78EC29183A9DE800871DFC /* Project object */;
+}
